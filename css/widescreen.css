@@ -1,0 +1,13 @@
+.header-content .logo .logo-text {
+    font-size: 1.1rem;
+}
+
+.header-content .bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .bars #en-lang {
+    margin: 0 .2rem;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Roboto For English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"/>
+      
+    <!-- Font Cairo For Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Arabic Style -->
+    <link rel="stylesheet" href="css/style-rtl.css" />
+    <!-- Mobile Style -->
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <!-- Larg Screens -->
+    <link rel="stylesheet" href="css/widescreen.css" media="screen and (min-width: 769px) and (max-width: 992px)">
+
+    <title>Shopping Cart - Favorites Page</title>
+</head>
+<body>
+  <header>
+    <div class="container">      
+      <div class="header-content">
+          <div class="logo">
+              <a href="index.html" class="logo-text" data-i18n="shoppingCart">Shopping Cart</a>
+              <img class="shopping-cart-image" src="images/shopping-cart.png" alt="image">
+          </div>
+
+          <div class="bars">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <button id="change-mode">Change Mode</button>
+            <button id="en-lang" data-i18n="english" value="en">En</button>
+            <button id="ar-lang" data-i18n="arabic" value="ar">Ar</button>
+          </div>
+
+          <nav class="navbar">
+            <ul id="links">
+              <li><a href="login.html" data-i18n="login">Login</a></li>
+              <li><a href="register.html" data-i18n="signUp"> Sign Up</a></li>
+            </ul>
+
+            <ul id="user-info">
+              <li class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge">0</span>
+                <div class="cart-products">
+                  <!-- Empty Div to Insert Products Names(<span></span>) in it by JS  -->
+                  <div></div>
+                  <a href="user-cart.html" data-i18n="viewAllProducts">View All Products</a>
+                </div>
+              </li>
+              <li><a href="profile.html" id="user"></a></li>
+              <li><a href="myproducts.html" data-i18n="myProducts">My Products</a></li>
+
+              <li><a href="#" id="logout" data-i18n="logOut">Log Out</a></li>
+
+            </ul>
+          </nav> 
+      </div>  
+    </div>
+  </header>
+    
+  <section class="favorites">
+    <div class="container">
+      <div class="products"></div>
+      <!-- Here We Show Products by JS-->
+      <div class="noproducts"></div>
+    </div>
+
+    <a href="create-product.html" class="create-product-icon"><i class="fa fa-plus"></i></a>
+  </section>
+
+  <script src="js/user.js"></script>
+  <script src="js/cart-menu.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/change-mode.js"></script>
+  <script src="js/menu-bars-toggle.js"></script>
+  <script src="js/favorites.js"></script>
+</body>
+</html>

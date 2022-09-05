@@ -1,0 +1,26 @@
+.edit-profile-page form input
+{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #34B3F1;
+    border-radius: 7px;
+    outline: #34B3F1;
+}
+
+.edit-profile-page form button {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #34B3F1;
+    border-radius: 7px;
+    outline: #34B3F1;
+    background-color: #0078AA;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
